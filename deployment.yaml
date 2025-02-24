@@ -4,10 +4,10 @@ metadata:
   name: python-app
   namespace: ns-prod-finkargo
   labels:
-    aplicación.kubernetes.io/team: devops
+    app.kubernetes.io/team: devops
     app.kubernetes.io/company: finkargo
-    app.kubernetes.io/stage: producción
-    aplicación.kubernetes.io/grupo: backend
+    app.kubernetes.io/stage: produccion
+    app.kubernetes.io/grupo: backend
 spec:
   replicas: 4
   selector:
