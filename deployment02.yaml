@@ -21,13 +21,14 @@ spec:
       containers:
       - name: python-container
         image: python:3.9.13-buster
+        command: [ "sleep", "3600" ]  # 🔹 Esto mantendrá el contenedor en ejecución
         resources:
           limits:
             memory: "150Mi"
-            cpu: "0.5"  # 🔹 Límite de CPU reducido
+            cpu: "0.5"
           requests:
             memory: "100Mi"
-            cpu: "0.2"  # 🔹 Se redujo la solicitud de CPU
+            cpu: "0.2"
         ports:
         - containerPort: 8080
 ---
